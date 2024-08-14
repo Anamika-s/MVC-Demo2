@@ -1,0 +1,16 @@
+﻿@model MVC_Demo2.Models.Student;  
+
+@* such a view in which you pass a model class is ka strongly typed view*@
+@* bwcuase of that we get intellisense because the passed object can be refenced throgh @Model *@
+@{
+    ViewData["Title"] = "Details1";
+}
+
+<h1>Details1</h1>
+
+@Model.Id
+@Model.Name
+
+@Model.Batch
+
+

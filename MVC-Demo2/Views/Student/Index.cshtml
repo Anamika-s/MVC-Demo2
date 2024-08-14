@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MVC_Demo2.Models.Student>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@{foreach(var student in @Model)
+{
+ @student.Id 
+ @student.Name
+ @student.Batch
+}
+
+}
